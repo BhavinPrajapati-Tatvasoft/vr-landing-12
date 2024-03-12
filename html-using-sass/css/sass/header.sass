@@ -1,0 +1,173 @@
+@import "variable.sass"
+@import "theme.scss"
+
+.change-header-bg
+  .header
+    background-color: $dark-green
+.header
+  padding:12px
+  position: fixed
+  top:0
+  left:0
+  right:0
+  z-index: 2
+  transition: all 0.4s ease-in-out
+  .logo
+    display: flex
+    align-items: center
+    p
+      padding-bottom: 0
+      font-size: toRem(25)
+      line-height: toRem(30)
+      margin-left: 10px
+      font-weight: 600
+      color: #ffffff
+  .navbar
+    padding: 0
+    .navbar-toggler
+      border: none !important
+      padding: 6px
+      margin-right:-6px
+      border-radius: 50%
+      &:hover
+        background-color: #147b63
+    .navbar-toggler-icon
+      background-image: url("../../images/hamburger1.svg")
+    .nav-item
+        .nav-link
+          color: #fff
+          font-size: toRem(16)
+          line-height: toRem(22)
+          font-weight: 600
+          padding: 16px 0
+          span
+            position: relative
+            &:after
+              content: ''
+              position: absolute
+              left: 50%
+              bottom: -3px
+              height: 1px
+              width:0
+              transform: translateX(-50%)
+              background-color: $primary-light-green
+              transition: all 0.4s ease-in-out
+          &.active, &:focus, &:hover
+            color: $primary-light-green
+          &:hover, &:focus
+            span
+              &:after
+                width: 100%
+
+.offcanvas
+  background-color: $dark-green
+  .icon-btn
+    padding: 12px
+    position: absolute
+    right: 10px
+    top: 10px
+    background: url("../../images/close-primary-icon.svg") center no-repeat
+    background-size: 14px
+    opacity: 1
+    border-radius: 50%
+    box-shadow: none !important
+    &:hover
+      background-color: #147b63
+.offcanvas-start
+  width:100%
+  border: none
+  transition: all 0.4s cubic-bezier(0.47, 0, 0.75, 0.72)
+  align-items: center
+  justify-content: center
+  text-align: center
+
+// Responsive Media Query
+@media (min-width: $breakpoint-sm  + "px")
+  .header
+    padding: 16px
+@media (min-width: $breakpoint-md  + "px")
+  .offcanvas-start
+    width: 280px
+    align-items: flex-start
+    justify-content: flex-start
+    text-align: left
+  .header
+    .navbar
+      .navbar-nav
+        padding-left: 16px
+        padding-top: 12px
+        .nav-item
+          .nav-link
+            padding: 8px 0
+@media (min-width: $breakpoint-lg  + "px")
+  .header
+    padding: 20px
+    .offcanvas
+      background-color: $transparent
+      justify-content: normal
+      align-items: normal
+    .navbar
+      .navbar-nav
+        padding-top:0
+        padding-left:0
+      .nav-item
+        &:not(first-child)
+          margin-left: 32px
+@media (min-width: $breakpoint-xxl  + "px")
+  .header
+    padding: 30px 92px 30px 98px
+    .navbar
+      .nav-item
+        &:not(first-child)
+          margin-left: 52px
+
+@media (max-width: 767px)
+  .offcanvas .navbar-nav li
+    animation: customFadeOutLeft cubic-bezier(.3, -0.01, 0.49, 1) 400ms forwards
+    opacity: 1
+  .offcanvas .navbar-nav li:nth-child(1)
+    animation-delay: 600ms
+  .offcanvas .navbar-nav li:nth-child(2)
+    animation-delay: 500ms
+  .offcanvas .navbar-nav li:nth-child(3)
+    animation-delay: 400ms
+  .offcanvas .navbar-nav li:nth-child(4)
+    animation-delay: 300ms
+  .offcanvas .navbar-nav li:nth-child(5)
+    animation-delay: 200ms
+  .offcanvas .navbar-nav li:nth-child(6)
+    animation-delay: 100ms
+
+  .offcanvas.show .navbar-nav li
+    animation: customFadeInLeft cubic-bezier(.3, -0.01, 0.49, 1) 750ms forwards
+    opacity: 0
+  .offcanvas.show .navbar-nav li:nth-child(1)
+    animation-delay: 100ms
+  .offcanvas.show .navbar-nav li:nth-child(2)
+    animation-delay: 200ms
+  .offcanvas.show .navbar-nav li:nth-child(3)
+    animation-delay: 300ms
+  .offcanvas.show .navbar-nav li:nth-child(4)
+    animation-delay: 400ms
+  .offcanvas.show .navbar-nav li:nth-child(5)
+    animation-delay: 500ms
+  .offcanvas.show .navbar-nav li:nth-child(6)
+    animation-delay: 600ms
+  @keyframes customFadeInLeft
+    0%
+      opacity: 0
+      transform: translateX(-200px)
+    75%
+      opacity: .2
+    100%
+      opacity: 1 
+      transform: translateX(0)
+  @keyframes customFadeOutLeft
+    0%
+      opacity: 1
+      transform: translateX(0)
+    75%
+      opacity: 0
+    100%
+      opacity: 0
+      transform: translateX(-500px)

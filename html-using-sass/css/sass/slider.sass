@@ -1,0 +1,77 @@
+@import "variable.sass"
+@import "theme.scss"
+
+.slick-slider
+    .slick-dots
+        display: flex
+        position: absolute
+        left: 20px
+        bottom: 30px
+        li
+            position: relative
+            transition: all 0.4s ease-in-out
+            &:first-child::after
+                content: ""
+                position: absolute
+                background-color: $primary-light-green
+                height: 2px
+                width: 0px
+                top: 50%
+                right: 18px
+                transform: translateY(-50%)
+                transition: all 0.4s ease-in-out
+            &:not(:first-child)::after
+                content: ""
+                position: absolute
+                background-color: $primary-light-green
+                height: 2px
+                width: 0px
+                top: 50%
+                left: 0
+                transform: translateY(-50%)
+                transition: all 0.4s ease-in-out
+            button
+                border: 0
+                background-color: transparent
+                padding: 0
+                color: $white
+                font-weight: 600
+                font-size: toRem(18)
+                line-height: toRem(22)
+            &:not(:last-child)
+                padding-right: 18px
+            &:first-child
+                &.slick-active
+                    padding-right: 45px
+                    &::after
+                        width: 21px
+            &:not(:first-child)
+                &.slick-active
+                    padding-left: 27px
+                    &::after
+                        width: 21px    
+            &.slick-active
+                button
+                    color: $primary-light-green
+
+// Responsive Media Query
+@media (min-width: $breakpoint-sm  + "px")
+    .slick-slider
+        .slick-dots
+            bottom:40px
+@media (min-width: $breakpoint-md  + "px")
+    .slick-slider
+        .slick-dots
+            bottom:60px
+@media (min-width: $breakpoint-lg  + "px")
+    .slick-slider
+        .slick-dots
+            bottom:70px
+@media (min-width: $breakpoint-xl  + "px")
+    .slick-slider
+        .slick-dots
+            left: 70px
+@media (min-width: $breakpoint-xxl  + "px")
+    .slick-slider
+        .slick-dots
+            left: 220px

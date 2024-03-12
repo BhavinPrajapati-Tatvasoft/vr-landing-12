@@ -1,0 +1,25 @@
+@import "variable.sass"
+@import "theme.scss"
+
+.sales
+    background: url("../../images/sales-banner.png") center no-repeat
+    background-size: cover
+    padding: 20px 0
+    .graph-box
+        background-color:#ffffff
+        padding:26px
+        box-shadow: 0 1px 13px 6px rgba(0, 0, 0, 0.04) 
+
+// Responsive Media Query
+@media (min-width: $breakpoint-sm  + "px")
+    .sales
+        padding: 30px 0
+@media (min-width: $breakpoint-md  + "px")
+    .sales
+        padding: 50px 0
+@media (min-width: $breakpoint-lg  + "px")
+    .sales
+        padding: 80px 0
+@media (min-width: $breakpoint-xl  + "px")
+    .sales
+        padding:102px 0 100px

@@ -1,0 +1,134 @@
+.theme-default .dark-green-icon {
+  display: none;
+}
+.theme-default .primary-icon {
+  display: block;
+}
+
+.theme-darkGreen .dark-green-icon {
+  display: block;
+}
+.theme-darkGreen .primary-icon {
+  display: none;
+}
+.theme-darkGreen .services a img {
+  filter: brightness(0) invert(1);
+}
+.theme-darkGreen .services a:hover h4 {
+  color: #000;
+}
+.theme-darkGreen .services a:hover p {
+  color: #000;
+}
+
+.services {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.services h2 {
+  padding-bottom: 10px;
+}
+.services a {
+  display: block;
+  text-align: center;
+  box-shadow: 0px 1px 13px 6px rgba(0, 0, 0, 0.04);
+  padding: 20px;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 16px;
+}
+.theme-default .services a {
+  background-color: #fff;
+  color: #000;
+}
+.theme-darkGreen .services a {
+  background-color: #142924;
+  color: #fff;
+}
+.services a h4 {
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.services a img {
+  height: 58px;
+  width: 58px;
+  margin: 0 auto 12px;
+  transition: all 0.4s ease-in-out;
+}
+.services a p {
+  padding-bottom: 0;
+}
+.services a:hover {
+  background-color: #49E1BD;
+  box-shadow: none;
+}
+.services a:hover img {
+  filter: brightness(0) invert(1);
+}
+
+@media (min-width: 576px) {
+  .services {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .services h2 {
+    padding-bottom: 16px;
+  }
+  .services a {
+    height: calc(100% - 16px);
+    padding: 16px;
+  }
+  .services a img {
+    height: 68px;
+    width: 68px;
+    margin-bottom: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .services {
+    padding-top: 40px;
+    padding-bottom: 44px;
+  }
+  .services h2 {
+    padding-bottom: 20px;
+  }
+  .services a img {
+    height: 78px;
+    width: 78px;
+  }
+  .services a h4 {
+    padding-bottom: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .services {
+    padding-top: 50px;
+    padding-bottom: 64px;
+  }
+  .services h2 {
+    padding-bottom: 28px;
+  }
+  .services a {
+    padding: 24px;
+  }
+  .services a h4 {
+    padding-bottom: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .services {
+    padding-top: 70px;
+    padding-bottom: 84px;
+  }
+  .services h2 {
+    padding-bottom: 36px;
+  }
+  .services a {
+    padding: 26px 42px 30px 42px;
+  }
+  .services a img {
+    height: 88px;
+    width: 88px;
+  }
+}
+
+/*# sourceMappingURL=services.css.map */

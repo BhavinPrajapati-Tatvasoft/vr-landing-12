@@ -1,0 +1,50 @@
+.need {
+  padding: 20px 0;
+  background-color: #F5F5F5 !important;
+}
+.need h2 {
+  padding-bottom: 8px;
+}
+.need p {
+  padding-bottom: 12px;
+}
+
+@media (min-width: 576px) {
+  .need {
+    background: url("../../images/need-banner.png") center no-repeat;
+    background-size: cover;
+    padding: 30px 0 230px;
+  }
+  .need h2 {
+    padding-bottom: 12px;
+  }
+  .need p {
+    padding-bottom: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .need {
+    padding: 50px 0 260px;
+  }
+  .need p {
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .need {
+    padding: 70px 0 290px;
+  }
+  .need p {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .need {
+    padding: 90px 0 333px;
+  }
+  .need p {
+    padding-bottom: 40px;
+  }
+}
+
+/*# sourceMappingURL=need.css.map */

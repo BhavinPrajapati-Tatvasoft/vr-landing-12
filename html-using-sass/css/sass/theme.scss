@@ -1,0 +1,54 @@
+@import "variable.sass";
+$themes: (
+  default: (
+    primaryBG: $primary-light-green,
+    primaryBGV2: $primary-light-green-v2,
+    primaryBtnColor: $dark-black,
+    secondaryBG: $dark-green,
+    serviceLinkBg: $white,
+    serviceLinkText: $black,
+    btnPrimaryV2: $primary-light-green,
+    btnPrimaryBorderV2: $transparent,
+    whiteBoxBg: $white,
+    lightTextTheme: $light-text,
+    primaryLinkHover: $black,
+  ),
+  "darkGreen": (
+    primaryBG: $dark-green,
+    primaryBGV2: $dark-green-v2,
+    primaryBtnColor: $primary-light-green,
+    secondaryBG: $primary-light-green,
+    serviceLinkBg: $dark-green,
+    serviceLinkText: $white,
+    btnPrimaryV2: $transparent,
+    btnPrimaryBorderV2: $primary-light-green,
+    whiteBoxBg: $dark-green,
+    lightTextTheme: $white,
+    primaryLinkHover: $primary-light-green,
+  ),
+);
+
+// Themify for themes
+@mixin themify($themes: $themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}

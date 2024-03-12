@@ -1,0 +1,305 @@
+@import "variable.sass"
+@import "theme.scss"
+
+// General
+*
+  outline: none !important
+.window-resizing *,
+body:not(.page-loaded) *
+  transition: none !important
+a
+  transition: all 0.4s ease-in-out
+html,
+body
+  min-width: 320px
+  min-height: 100vh
+body
+  font-size: toRem(14)
+  line-height: toRem(18)
+  color: $black
+  font-family: 'Montserrat', sans-serif
+  -ms-overflow-style: scrollbar
+  -webkit-font-smoothing: subpixel-antialiased
+.wrapper
+  min-height: 100vh
+  position: relative
+a
+  color: #000
+  text-decoration: none
+a:hover
+  color: #000
+  text-decoration: none
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  line-height: 1.2em
+  padding: 0 0 20px
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span
+  display: block
+
+h2
+  font-size: toRem(20)
+  line-height: toRem(26)
+  color: $dark-black
+h3
+  font-size: toRem(18)
+  line-height: toRem(24)
+h4
+  font-size: toRem(16)
+  line-height: toRem(22)
+h5
+  font-size: toRem(16)
+  line-height: toRem(22)
+h6
+  font-size: toRem(15)
+  line-height: toRem(20)
+p
+  padding: 0 0 20px
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea
+  -webkit-appearance: none
+  appearance: none
+::-webkit-input-placeholder
+  color: #000
+::-moz-placeholder
+  color: #000
+:-ms-input-placeholder
+  color: #000
+:-moz-placeholder
+  color: #000
+::-moz-focus-inner
+  border: 0
+select:-moz-focusring
+  color: transparent
+  text-shadow: 0 0 0 #000
+option:not(:checked)
+  color: black
+
+.fw-500
+  font-weight: 500
+.fw-600
+  font-weight: 600
+.fs-12
+  font-size: toRem(12)
+  line-height: toRem(18)
+.light-text
+  color:#787878
+.light-text-theme
+  @include themify($themes)
+    color: themed("lightTextTheme")
+.b-and-white-link
+  transition: none
+  position: relative
+  @include themify($themes)
+    color: themed("serviceLinkText")
+.b-and-white-link
+  &:after
+    content: ' '
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: -2px
+    width: 0
+    height: 1px
+    background-color: $primary-light-green
+    transition: all 0.4s ease-in-out
+    opacity: 0
+  &:hover, &:focus
+    &:after
+      width: 100%
+      opacity: 1
+// Logo
+.logo
+    display: inline-block
+    vertical-align: middle
+    img
+      height: 34px
+      width: 34px
+      display: block
+// Link
+.primary-link
+  font-weight: 700
+  color: $primary-light-green !important
+  position: relative
+  text-transform: uppercase
+  display: inline-flex
+  &:after
+    content: ' '
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: -2px
+    width: 0
+    height: 1px
+    @include themify($themes)
+      background-color: themed("primaryLinkHover")
+    transition: all 0.4s ease-in-out
+    opacity: 0
+  &:hover, &:focus
+    &:after
+      width: 100%
+      opacity: 1
+// Form control
+.form-control
+  box-shadow: none !important
+
+// Button
+.btn
+  border-radius: 0
+  box-shadow: none !important
+  white-space: nowrap
+.btn-primary
+  @include themify($themes)
+    background-color: themed("primaryBG")
+    color: themed("primaryBtnColor")
+  border: 1px solid transparent 
+  padding: 9px 14px
+  font-size: toRem(15)
+  line-height: toRem(20)
+  display: flex
+  align-items: center
+  font-weight: 600
+  flex-wrap: nowrap
+  &.end-icon
+    span
+      display: block
+      padding-right: 10px
+  &.right-arrow
+    img
+      height: 12px
+      width: 21px
+      transition: all 0.4s ease-in-out
+  &:hover, &:focus
+    @include themify($themes)
+      background-color: themed("primaryBGV2")
+    border-color: transparent
+    img
+      transform: translateX(6px)
+  &:focus, &:active
+    border-color: transparent
+.btn-primary.btn-primary-v2
+  @include themify($themes)
+    background-color: themed("btnPrimaryV2")
+    border-color: themed("btnPrimaryBorderV2")
+
+.popover 
+  font-size: toRem(12)
+  line-height: toRem(18)
+  border: none
+  box-shadow: 0px 1px 13px 6px rgba(0, 0, 0, 0.04)
+  border-radius: 0
+  max-width: 482px
+  .popover-arrow
+    display: none
+  .popover-body
+    padding: 20px
+    color: #787878
+    text-align: center
+.theme-default
+  .btn-primary
+    .black-icon
+      display: block
+    .primary-icon
+      display: none
+
+.theme-darkGreen
+  .btn-primary
+    .primary-icon
+      display: block
+    .black-icon
+      display: none
+
+// Theme Listing
+.themes-listing 
+  background-color: $white
+  position: fixed
+  top: 100px
+  right: 0
+  padding: 8px
+  border-radius: 6px 0 0 6px
+  box-shadow: 0 0 2px 0px black
+  li 
+    &:not(:last-child) 
+      padding-bottom: 6px
+    a 
+      display: block
+      height: 16px
+      width: 16px
+      border-radius: 50%
+      position: relative
+      &::after 
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background-color: $white
+        height: 6px
+        width: 6px
+        border-radius: 50%
+        z-index: 1
+        transition: all 0.4s ease-in-out
+        opacity: 0
+      &:focus::after,
+      &.active::after 
+        opacity: 1
+      &.default-theme 
+        background-color: $primary-light-green
+      &.dark-green-theme 
+        background-color: $dark-green
+
+// Responsive Media Query
+@media (min-width: $breakpoint-sm  + "px")
+  body
+    font-size: toRem(15)
+    line-height: toRem(20)
+  h2
+    font-size: toRem(22)
+    line-height: toRem(28)
+  h3
+    font-size: toRem(20)
+    line-height: toRem(26)
+  h5
+    font-size: toRem(18)
+    line-height: toRem(24)
+  h6
+    font-size: toRem(16)
+    line-height: toRem(22)
+  .btn-primary
+    padding: 12px 16px
+@media (min-width: $breakpoint-md  + "px")
+  h2
+      font-size: toRem(26)
+      line-height: toRem(32)
+  h3
+    font-size: toRem(22)
+    line-height: toRem(28)
+  h4
+    font-size: toRem(20)
+    line-height: toRem(26)
+  .btn-primary
+    padding: 14px 20px
+    &.end-icon
+      span
+        padding-right: 15px
+@media (min-width: $breakpoint-lg  + "px")
+  h2
+    font-size: toRem(36)
+    line-height: toRem(42)
+@media (min-width: $breakpoint-xl  + "px")
+  h2
+      font-size: toRem(40)
+      line-height: toRem(46)
+  .btn-primary
+    padding-left: 30px
+    padding-right: 30px

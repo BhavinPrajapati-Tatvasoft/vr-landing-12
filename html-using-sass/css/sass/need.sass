@@ -1,0 +1,37 @@
+@import "variable.sass"
+@import "theme.scss"
+
+.need
+    padding: 20px 0
+
+    background-color: #F5F5F5 !important
+    h2
+        padding-bottom: 8px
+    p
+        padding-bottom: 12px
+
+// Responsive Media Query
+@media (min-width: $breakpoint-sm  + "px")
+    .need
+        background: url("../../images/need-banner.png") center no-repeat
+        background-size: cover
+        padding: 30px 0 230px
+        h2
+            padding-bottom: 12px
+        p
+            padding-bottom: 16px
+@media (min-width: $breakpoint-md  + "px")
+    .need
+        padding: 50px 0 260px
+        p
+            padding-bottom: 20px
+@media (min-width: $breakpoint-lg  + "px")
+    .need
+        padding: 70px 0 290px
+        p
+            padding-bottom: 30px
+@media (min-width: $breakpoint-xl  + "px")
+    .need
+        padding: 90px 0 333px
+        p
+            padding-bottom: 40px

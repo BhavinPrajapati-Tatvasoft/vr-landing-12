@@ -1,0 +1,118 @@
+@import "variable.sass"
+@import "theme.scss"
+
+.hero-banner
+  .slick-slide
+    background: url('../../images/hero-banner.png') center no-repeat
+    background-size: cover
+    padding: 78px 0 78px 16px
+  .slide-wrapper
+    max-width: 200px
+    width: 100%
+  .top-label
+    position: relative
+    color: #49E1BD
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    padding-left: 58px
+    padding-bottom: 0
+    margin-bottom: 6px
+    &::after
+      content: ''
+      position: absolute
+      width: 46px
+      height: 2px
+      background-color: #49E1BD
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+  h1
+    color: #FFFFFF
+    font-weight: 600
+    font-size: toRem(22)
+    line-height: toRem(28)
+    padding-bottom: 20px
+  .btn-wrapper
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    .btn:first-child
+      margin-right: 24px
+      margin-bottom: 14px
+    .icon-btn
+      border-radius: 50%
+      background-color: #FFFFFF
+      padding: 11px
+      img
+        height: 16px
+        width: 16px
+        display: block
+        transition: all 0.4s ease-in-out
+        transform: scale(1)
+      &:hover, &:focus
+        img
+          transform: scale(1.4)
+    p
+      padding-bottom: 0
+      color: #fff
+      font-weight: 600
+      padding-left: 13px
+
+// Responsive Media Query
+@media (min-width: $breakpoint-sm  + "px")
+  .hero-banner
+    .slide-wrapper
+      max-width: 350px
+    h1
+      font-size: toRem(28)
+      line-height: toRem(34)
+    .top-label
+      font-size: toRem(20)
+      line-height: toRem(24)
+      margin-bottom: 10px
+    .slick-slide
+      padding: 98px 0 88px 16px
+    .btn-wrapper
+      .btn:first-child
+        margin-bottom: 0
+@media (min-width: $breakpoint-md  + "px")
+  .hero-banner
+    h1
+      font-size: toRem(36)
+      line-height: toRem(42)
+    .slide-wrapper
+      max-width: 460px
+    .slick-slide
+      padding: 118px 0 118px 16px
+    .btn-wrapper
+      .icon-btn
+        padding: 15px
+@media (min-width: $breakpoint-lg  + "px")
+  .hero-banner
+    h1
+      padding-bottom: 30px
+      font-size: toRem(48)
+      line-height: toRem(54)
+    .slide-wrapper
+      max-width: 500px
+    .top-label
+      margin-bottom: 16px
+    .slick-slide
+      padding: 148px 0 148px 20px
+@media (min-width: $breakpoint-xl  + "px")
+  .hero-banner
+    h1
+      font-size: toRem(60)
+      line-height: toRem(65)
+      padding-bottom: 35px
+    .slide-wrapper
+      max-width: 660px
+    .slick-slide
+      padding: 186px 0px 136px 70px
+@media (min-width: $breakpoint-xxl  + "px")
+  .hero-banner
+    h1
+      font-size: toRem(65)
+    .slick-slide
+      padding: 238px 0 258px 220px

@@ -1,0 +1,141 @@
+.hero-banner .slick-slide {
+  background: url("../../images/hero-banner.png") center no-repeat;
+  background-size: cover;
+  padding: 78px 0 78px 16px;
+}
+.hero-banner .slide-wrapper {
+  max-width: 200px;
+  width: 100%;
+}
+.hero-banner .top-label {
+  position: relative;
+  color: #49E1BD;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 58px;
+  padding-bottom: 0;
+  margin-bottom: 6px;
+}
+.hero-banner .top-label::after {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 2px;
+  background-color: #49E1BD;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hero-banner h1 {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  padding-bottom: 20px;
+}
+.hero-banner .btn-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero-banner .btn-wrapper .btn:first-child {
+  margin-right: 24px;
+  margin-bottom: 14px;
+}
+.hero-banner .btn-wrapper .icon-btn {
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  padding: 11px;
+}
+.hero-banner .btn-wrapper .icon-btn img {
+  height: 16px;
+  width: 16px;
+  display: block;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1);
+}
+.hero-banner .btn-wrapper .icon-btn:hover img, .hero-banner .btn-wrapper .icon-btn:focus img {
+  transform: scale(1.4);
+}
+.hero-banner .btn-wrapper p {
+  padding-bottom: 0;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 13px;
+}
+
+@media (min-width: 576px) {
+  .hero-banner .slide-wrapper {
+    max-width: 350px;
+  }
+  .hero-banner h1 {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+  }
+  .hero-banner .top-label {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .hero-banner .slick-slide {
+    padding: 98px 0 88px 16px;
+  }
+  .hero-banner .btn-wrapper .btn:first-child {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .hero-banner h1 {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+  }
+  .hero-banner .slide-wrapper {
+    max-width: 460px;
+  }
+  .hero-banner .slick-slide {
+    padding: 118px 0 118px 16px;
+  }
+  .hero-banner .btn-wrapper .icon-btn {
+    padding: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .hero-banner h1 {
+    padding-bottom: 30px;
+    font-size: 3rem;
+    line-height: 3.375rem;
+  }
+  .hero-banner .slide-wrapper {
+    max-width: 500px;
+  }
+  .hero-banner .top-label {
+    margin-bottom: 16px;
+  }
+  .hero-banner .slick-slide {
+    padding: 148px 0 148px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-banner h1 {
+    font-size: 3.75rem;
+    line-height: 4.0625rem;
+    padding-bottom: 35px;
+  }
+  .hero-banner .slide-wrapper {
+    max-width: 660px;
+  }
+  .hero-banner .slick-slide {
+    padding: 186px 0px 136px 70px;
+  }
+}
+@media (min-width: 1400px) {
+  .hero-banner h1 {
+    font-size: 4.0625rem;
+  }
+  .hero-banner .slick-slide {
+    padding: 238px 0 258px 220px;
+  }
+}
+
+/*# sourceMappingURL=hero-banner.css.map */

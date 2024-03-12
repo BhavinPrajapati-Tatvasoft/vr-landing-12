@@ -1,0 +1,75 @@
+.resource {
+  padding: 20px 0 10px;
+}
+.resource h2 {
+  padding-bottom: 16px;
+}
+.resource .card {
+  border: none;
+  border-radius: 0;
+  box-shadow: 0px 1px 13px 6px rgba(0, 0, 0, 0.04);
+  height: calc(100% - 16px);
+  margin-bottom: 16px;
+}
+.theme-default .resource .card {
+  background-color: #fff;
+  color: #000;
+}
+.theme-darkGreen .resource .card {
+  background-color: #142924;
+  color: #fff;
+}
+.resource .card .card-img-top {
+  border-radius: 0;
+}
+.resource .card .card-body {
+  padding: 16px;
+}
+.resource .large-card .card-body {
+  padding: 16px;
+}
+
+@media (min-width: 576px) {
+  .resource {
+    padding: 30px 0 20px;
+  }
+  .resource .card {
+    height: calc(100% - 24px);
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .resource {
+    padding: 50px 0 40px;
+  }
+  .resource h2 {
+    padding-bottom: 26px;
+  }
+  .resource .large-card .card-body {
+    padding: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .resource {
+    padding: 70px 0 60px;
+  }
+  .resource h2 {
+    padding-bottom: 36px;
+  }
+  .resource .card .card-body {
+    padding: 16px 20px 30px;
+  }
+  .resource .large-card .card-body {
+    padding: 26px 30px 45px;
+  }
+}
+@media (min-width: 1200px) {
+  .resource {
+    padding: 94px 0 76px;
+  }
+  .resource h2 {
+    padding-bottom: 46px;
+  }
+}
+
+/*# sourceMappingURL=resource.css.map */

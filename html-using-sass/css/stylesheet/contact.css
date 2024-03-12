@@ -1,0 +1,315 @@
+.contact {
+  padding: 20px 0;
+  background: url("../../images/contact-banner.png") center no-repeat;
+  background-size: cover;
+}
+.contact h2 {
+  padding-bottom: 8px;
+}
+.contact .map-wrapper .testimonial-slider {
+  display: block;
+  padding-bottom: 40px;
+  margin-bottom: 26px;
+}
+.contact .map-wrapper .testimonial-slider .slick-arrow {
+  border: none;
+  background-color: #49E1BD;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.4s ease-in-out;
+}
+.contact .map-wrapper .testimonial-slider .slick-arrow:hover, .contact .map-wrapper .testimonial-slider .slick-arrow:focus {
+  background-color: #31ddb5;
+}
+.contact .map-wrapper .testimonial-slider .slick-arrow img {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+.contact .map-wrapper .testimonial-slider .slick-prev {
+  right: calc(50% + 5px);
+  padding-right: 12px;
+}
+.contact .map-wrapper .testimonial-slider .slick-prev img {
+  margin-left: -1px;
+}
+.contact .map-wrapper .testimonial-slider .slick-next {
+  left: calc(50% + 5px);
+  padding-left: 12px;
+}
+.contact .map-wrapper .testimonial-slider .slick-next img {
+  margin-right: -1px;
+}
+.contact .map-wrapper .testimonial-slider .slide-wrapper {
+  box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+.contact .map-wrapper .testimonial-slider .slide-wrapper img {
+  max-height: 40px;
+  max-width: 40px;
+  margin-bottom: 12px;
+}
+.contact .map-wrapper .testimonial-slider .slide-wrapper p {
+  text-align: center;
+}
+.contact .map-wrapper .testimonial-slider .slide-wrapper .name {
+  padding-bottom: 4px;
+  font-weight: 700;
+}
+.contact .map-wrapper .testimonial-slider .slide-wrapper .info-text {
+  padding-bottom: 12px;
+}
+.contact .map-wrapper .map-inner {
+  display: none;
+}
+.contact .white-box {
+  box-shadow: 0px 1px 13px 6px rgba(0, 0, 0, 0.04);
+  padding: 16px;
+}
+.theme-default .contact .white-box {
+  background-color: #fff;
+  color: #000;
+}
+.theme-darkGreen .contact .white-box {
+  background-color: #142924;
+  color: #fff;
+}
+.contact .white-box .info-text {
+  padding-bottom: 16px;
+  line-height: 20px;
+}
+.contact .contact-details-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact .contact-details-wrapper .contact-details-item {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+.contact .contact-details-wrapper .contact-details-item:first-child {
+  margin-bottom: 14px;
+}
+.contact .contact-details-wrapper .contact-details-item:first-child img {
+  margin-right: 8px;
+}
+.contact .contact-details-wrapper .contact-details-item:last-child img {
+  margin-right: 8px;
+}
+.contact .contact-details-wrapper .contact-details-item img {
+  height: 36px;
+  width: 36px;
+  display: block;
+}
+.contact .contact-details-wrapper .contact-details-item p {
+  padding-bottom: 0;
+  text-align: left;
+}
+
+@media (min-width: 576px) {
+  .contact {
+    padding: 30px 0;
+  }
+  .contact .white-box {
+    padding: 20px;
+  }
+  .contact .white-box .info-text {
+    padding-bottom: 20px;
+  }
+  .contact .contact-details-wrapper {
+    display: inline-flex;
+    flex-wrap: nowrap;
+  }
+  .contact .contact-details-wrapper .contact-details-item {
+    flex-grow: 0;
+    width: auto;
+  }
+  .contact .contact-details-wrapper .contact-details-item:first-child {
+    padding-right: 48px;
+    margin-bottom: 0;
+  }
+  .contact .contact-details-wrapper .contact-details-item:first-child img {
+    margin-right: 2px;
+  }
+  .contact .contact-details-wrapper .contact-details-item:last-child {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 48px;
+  }
+  .contact .contact-details-wrapper .contact-details-item img {
+    height: 40px;
+    width: 40px;
+  }
+  .contact .map-wrapper .testimonial-slider {
+    margin-bottom: 26px;
+  }
+}
+@media (min-width: 768px) {
+  .contact {
+    padding: 50px 0;
+  }
+  .contact h2 {
+    padding-bottom: 16px;
+  }
+  .contact .white-box {
+    padding: 30px 34px;
+  }
+  .contact .white-box .info-text {
+    padding-bottom: 24px;
+    line-height: 20px;
+  }
+  .contact .contact-details-wrapper .contact-details-item:first-child {
+    padding-right: 68px;
+  }
+  .contact .contact-details-wrapper .contact-details-item:last-child {
+    padding-left: 68px;
+  }
+  .contact .map-wrapper .testimonial-slider {
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 992px) {
+  .contact {
+    padding: 70px 0;
+  }
+  .contact h2 {
+    padding-bottom: 48px;
+  }
+  .contact .white-box {
+    padding: 44px 92px;
+    border-radius: 10px;
+  }
+  .contact .white-box .info-text {
+    padding-bottom: 30px;
+    line-height: 24px;
+  }
+  .contact .contact-details-wrapper .contact-details-item {
+    padding: 4px 0;
+  }
+  .contact .contact-details-wrapper .contact-details-item:first-child {
+    padding-right: 98px;
+  }
+  .contact .contact-details-wrapper .contact-details-item:last-child {
+    padding-left: 98px;
+  }
+  .contact .contact-details-wrapper .contact-details-item p {
+    padding-bottom: 3px;
+  }
+  .contact .map-wrapper {
+    background: url("../../images/world-map.png") center no-repeat;
+    background-size: cover;
+  }
+  .contact .map-wrapper .testimonial-slider {
+    display: none;
+  }
+  .contact .map-wrapper .map-inner {
+    display: block;
+    position: relative;
+    padding-bottom: 34.39%;
+  }
+  .contact .map-wrapper .map-inner .user {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+  }
+  .contact .map-wrapper .map-inner .user img {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+  }
+  .contact .map-wrapper .map-inner .user::after {
+    content: " ";
+    background-color: rgba(73, 225, 189, 0.2);
+    position: absolute;
+    left: -9px;
+    top: -9px;
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .contact .map-wrapper .map-inner .user:hover {
+    border-color: #49E1BD;
+  }
+  .contact .map-wrapper .map-inner .user:hover::after {
+    opacity: 1;
+  }
+  .contact .map-wrapper .map-inner .user-1 {
+    top: 51px;
+    left: 66px;
+  }
+  .contact .map-wrapper .map-inner .user-2 {
+    top: 91px;
+    left: 175px;
+  }
+  .contact .map-wrapper .map-inner .user-3 {
+    top: 207px;
+    left: 215px;
+  }
+  .contact .map-wrapper .map-inner .user-4 {
+    top: 71px;
+    right: 181px;
+  }
+  .contact .map-wrapper .map-inner .user-5 {
+    top: 227px;
+    right: 316px;
+  }
+  .contact .map-wrapper .map-inner .user-6 {
+    top: 126px;
+    right: 475px;
+  }
+  .contact .map-wrapper .map-inner .user-7 {
+    top: 16px;
+    right: 262px;
+  }
+  .contact .map-wrapper .map-inner .user-8 {
+    top: 111px;
+    right: 316px;
+  }
+  .contact .map-wrapper .map-inner .user-9 {
+    top: 227px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contact .map-wrapper .map-inner .user-10 {
+    top: 16px;
+    left: 381px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact {
+    padding: 90px 0;
+  }
+  .contact h2 {
+    padding-bottom: 58px;
+  }
+  .contact .white-box {
+    padding: 44px 92px 52px;
+  }
+  .contact .white-box .info-text {
+    padding-bottom: 34px;
+  }
+  .contact .map-wrapper .map-inner {
+    padding-bottom: 24.39%;
+  }
+}
+@media (min-width: 1400px) {
+  .contact h2 {
+    padding-bottom: 100px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

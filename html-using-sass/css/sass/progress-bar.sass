@@ -1,0 +1,36 @@
+@import "variable.sass"
+@import "theme.scss"
+
+.circle-progress
+    width: 130px
+    height: 130px
+    position: relative
+    .progressbar-text
+        font-size: toRem(30)
+        line-height: toRem(36)
+
+// Responsive Media Query
+@media (min-width: $breakpoint-sm  + "px")
+    .circle-progress
+        width: 150px
+        height: 150px
+        .progressbar-text
+            font-size: toRem(40)
+            line-height: toRem(46)
+@media (min-width: $breakpoint-lg  + "px")
+    .circle-progress
+        width: 196px
+        height: 196px
+        .progressbar-text
+            font-size: toRem(46)
+            line-height: toRem(52)
+@media (min-width: $breakpoint-xl  + "px")
+    .circle-progress
+        .progressbar-text
+            font-size: toRem(60)
+            line-height: toRem(66)
+@media (min-width: $breakpoint-xxl  + "px")
+    .circle-progress
+        .progressbar-text
+            font-size: toRem(65)
+            line-height: toRem(70)

@@ -1,0 +1,33 @@
+.sales {
+  background: url("../../images/sales-banner.png") center no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+}
+.sales .graph-box {
+  background-color: #ffffff;
+  padding: 26px;
+  box-shadow: 0 1px 13px 6px rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 576px) {
+  .sales {
+    padding: 30px 0;
+  }
+}
+@media (min-width: 768px) {
+  .sales {
+    padding: 50px 0;
+  }
+}
+@media (min-width: 992px) {
+  .sales {
+    padding: 80px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .sales {
+    padding: 102px 0 100px;
+  }
+}
+
+/*# sourceMappingURL=sales.css.map */

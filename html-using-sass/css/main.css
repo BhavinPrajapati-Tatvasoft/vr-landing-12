@@ -1,0 +1,24 @@
+/* Import All css here */
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap";
+@import "bootstrap.min.css";
+@import "reset.css";
+@import "slick.css";
+@import "animations.css";
+@import "stylesheet/global.css";
+@import "stylesheet/slider.css";
+@import "stylesheet/header.css";
+@import "stylesheet/hero-banner.css";
+@import "stylesheet/services.css";
+@import "stylesheet/sales.css";
+@import "stylesheet/achievements.css";
+@import "stylesheet/progress-bar.css";
+@import "stylesheet/contact.css";
+@import "stylesheet/resource.css";
+@import "stylesheet/need.css";
+@import "stylesheet/footer.css";
+@import "dev-style.css";
+/* Body Hidden till Load the page */
+body:not(.page-loaded) {
+  opacity: 0;
+  overflow: hidden;
+}

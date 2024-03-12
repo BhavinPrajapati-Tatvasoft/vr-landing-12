@@ -1,0 +1,100 @@
+@import "variable.sass"
+@import "theme.scss"
+
+.theme-default
+    .dark-green-icon
+        display: none
+    .primary-icon
+        display: block
+.theme-darkGreen
+    .dark-green-icon
+        display: block
+    .primary-icon
+        display: none
+    .services
+        a
+            img
+                filter: brightness(0) invert(1)
+            &:hover
+                h4 
+                    color: $black
+                p 
+                    color: $black
+.services
+    padding-top: 20px
+    padding-bottom: 20px
+    h2
+        padding-bottom: 10px
+    a
+        display: block
+        text-align: center
+        box-shadow: 0px 1px 13px 6px rgba(0, 0, 0, 0.04)
+        padding: 20px
+        transition: all 0.4s ease-in-out
+        margin-bottom: 16px
+        @include themify($themes)
+            background-color: themed("serviceLinkBg")
+            color: themed("serviceLinkText")
+        h4
+            font-weight: 600
+            padding-bottom: 10px
+        img
+            height: 58px
+            width: 58px
+            margin: 0 auto 12px
+            transition: all 0.4s ease-in-out
+        p
+            padding-bottom: 0
+        &:hover
+            background-color: $primary-light-green
+            box-shadow: none
+            img
+                filter: brightness(0) invert(1)
+
+// Responsive Media Query
+@media (min-width: $breakpoint-sm  + "px")
+    .services
+        padding-top: 30px
+        padding-bottom: 30px
+        h2
+            padding-bottom: 16px
+        a
+            height: calc(100% - 16px)
+            padding: 16px
+            img
+                height: 68px
+                width: 68px
+                margin-bottom: 16px
+@media (min-width: $breakpoint-md  + "px")
+    .services
+        padding-top: 40px
+        padding-bottom: 44px
+        h2
+            padding-bottom: 20px
+        a
+            img
+                height: 78px
+                width: 78px
+            h4
+                padding-bottom: 16px
+@media (min-width: $breakpoint-lg  + "px")
+    .services
+        padding-top: 50px
+        padding-bottom: 64px
+        h2
+            padding-bottom: 28px
+        a
+            padding: 24px
+            h4
+                padding-bottom: 32px
+@media (min-width: $breakpoint-xl  + "px")
+    .services
+        padding-top: 70px
+        padding-bottom: 84px
+        h2
+            padding-bottom: 36px
+        a
+            padding: 26px 42px 30px 42px
+            img
+                height: 88px
+                width: 88px

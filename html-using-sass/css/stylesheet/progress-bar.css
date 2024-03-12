@@ -1,0 +1,44 @@
+.circle-progress {
+  width: 130px;
+  height: 130px;
+  position: relative;
+}
+.circle-progress .progressbar-text {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 576px) {
+  .circle-progress {
+    width: 150px;
+    height: 150px;
+  }
+  .circle-progress .progressbar-text {
+    font-size: 2.5rem;
+    line-height: 2.875rem;
+  }
+}
+@media (min-width: 992px) {
+  .circle-progress {
+    width: 196px;
+    height: 196px;
+  }
+  .circle-progress .progressbar-text {
+    font-size: 2.875rem;
+    line-height: 3.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  .circle-progress .progressbar-text {
+    font-size: 3.75rem;
+    line-height: 4.125rem;
+  }
+}
+@media (min-width: 1400px) {
+  .circle-progress .progressbar-text {
+    font-size: 4.0625rem;
+    line-height: 4.375rem;
+  }
+}
+
+/*# sourceMappingURL=progress-bar.css.map */
